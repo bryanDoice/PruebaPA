@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista de Invitado</title>
+    <link rel="stylesheet" href="styleInvitado.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido Invitado</h1>
+        <button id="logout">Salir</button>
+    </header>
+
+    <div class="layout">
+        <aside>
+            <ul id="menu"></ul>
+        </aside>
+
+        <main>
+            <p class="readonly-info">Solo puedes visualizar los datos disponibles. No puedes realizar modificaciones.</p>
+            <div id="message"></div>
+            <div id="readonly-container"></div>
+        </main>
+    </div>
+
+    <script src="scriptInvitado.js"></script>
+</body>
+</html>

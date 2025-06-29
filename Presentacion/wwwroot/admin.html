@@ -1,0 +1,36 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="styleAdmin.css">
+</head>
+<body>
+    <header>
+        <h1>Administrador – CRUD</h1>
+        <button id="logout">Salir</button>
+    </header>
+
+    <div class="layout">
+        <aside>
+            <ul id="menu"></ul>
+        </aside>
+
+        <main>
+            <div id="message"></div>
+
+            <section class="hash-generator">
+                <strong>Generar contraseña hash (ASP.NET Identity):</strong><br>
+                <input type="text" id="plainPassword" placeholder="Escribe una contraseña">
+                <button onclick="generarHash()">Generar Hash</button><br>
+                <input type="text" id="hashOutput" readonly placeholder="Hash generado aparecerá aquí…">
+            </section>
+
+            <div id="crud-container"></div>
+        </main>
+    </div>
+
+    <script src="scriptAdmin.js"></script>
+</body>
+</html>

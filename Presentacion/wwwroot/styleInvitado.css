@@ -1,0 +1,130 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px #0003;
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    header button {
+        background-color: #e74c3c;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+        header button:hover {
+            background-color: #c0392b;
+        }
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    height: calc(100vh - 62px);
+}
+
+aside {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+    aside ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside li {
+        margin-bottom: 4px;
+    }
+
+    aside a {
+        display: block;
+        padding: 10px 20px;
+        color: #ecf0f1;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+        aside a:hover,
+        aside a.active {
+            background-color: #2c3e50;
+        }
+
+main {
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.readonly-info {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+}
+
+.buscador {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}

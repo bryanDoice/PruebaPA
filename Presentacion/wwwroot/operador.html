@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Panel del Operador</title>
+    <link rel="stylesheet" href="styleOperador.css" />
+</head>
+<body>
+    <header>
+        <h1>Operador – CRUD</h1>
+        <button id="logout">Salir</button>
+    </header>
+
+    <div class="layout">
+        <aside>
+            <ul id="menu"></ul>
+        </aside>
+
+        <main>
+            <div id="message"></div>
+
+            <section class="hash-generator">
+                <strong>Generar nueva contraseña (ASP.NET Identity):</strong><br />
+                <input type="text" id="plainPassword" placeholder="Escribe nueva contraseña" />
+                <button onclick="generarHash()">Generar Hash</button><br />
+                <input type="text" id="hashOutput" readonly placeholder="Hash generado aparecerá aquí..." />
+            </section>
+
+            <div id="crud-container"></div>
+        </main>
+    </div>
+
+    <script src="scriptOperador.js"></script>
+</body>
+</html>
+
